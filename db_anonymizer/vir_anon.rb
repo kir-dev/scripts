@@ -32,6 +32,7 @@ begin
     $DB.run('truncate table neptun_list cascade')
     $DB.run('truncate table lostpw_tokens')
     $DB.run('truncate table spot_images')
+    $DB.run('truncate table im_accounts')
   end # COMMIT
 
   LOGGER.info "Finished. Elapsed time=" + (Time.now - time_begin).to_s
